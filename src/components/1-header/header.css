@@ -1,0 +1,132 @@
+
+
+header .header {
+    padding: 0.8rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    box-shadow: 1px 1px 1px 0.4px hsl(222, 17%, 17%);
+}
+header  .logo {
+
+}
+header .header .links ul li{
+    all: unset;
+    margin-left: 0.3rem;
+    transition: 1s;
+}
+header .header .links  a{
+    all: unset;
+    color:var(--secondery-color);;
+    margin-left: 0.3rem;
+    padding: 10px 0;
+    opacity: 0.7;
+    font-size: 0.88rem;
+    font-weight: 400;
+    transition: 0.2s;
+}
+header .logo h1 {
+    font-size: 1.3rem;
+    color: var(--secondery-color);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+header .links button.menu {
+    display: none;
+}
+
+header .header .links  a, header .logo h1 {
+    padding: 1rem 0.1;
+} 
+header .header .links  a:hover, header .logo h1:hover {
+    color: var(--blue-color);
+    scale: 1;
+    cursor: pointer;
+    opacity: 1;
+} 
+
+nav.links a.active {
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 1.0rem;
+    scale: 1;
+}
+/* ========================
+    3- Modal == pop up
+=========================== */
+
+header .popup{
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color: rgba(71, 71, 72, 0.271);
+    backdrop-filter: blur(4px);
+ }
+
+
+@keyframes mymove {
+    0% {
+      scale: 0;
+    }
+  
+    60% {
+      scale: 1.2;
+    }
+  
+    100% {
+      scale: 1;
+    }
+  }
+  
+  header .popup ul.modal {
+    animation: mymove 0.77s 1;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--primery-color);
+  }
+  header .popup ul.modal li {
+    border-bottom: 1px solid hsla(0, 0%, 93%, 0.699);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+  }
+  
+  header .popup ul.modal li:first-child {
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+    margin-bottom: -1rem;
+  }
+  
+  header .popup ul.modal li:last-child {
+    border: none;
+  }
+  
+  header .popup ul.modal li a {
+    font-size: 1rem;
+    color: var(--secondery-color);
+    transition: 0.2s;
+  }
+  header .popup ul.modal li a:hover {
+    color: var(--blue-color);
+    scale: 1px;
+    font-size: 1.1rem;
+  }
+
+  
+/* Start Responsive disine */
+
+  @media (max-width: 600px) {
+    header nav ul.flex {
+      display: none;
+    }
+  
+    header .links button.menu  {
+      display: block;
+    }
+  }
+  

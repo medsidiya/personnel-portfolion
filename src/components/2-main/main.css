@@ -1,0 +1,93 @@
+
+main.flex {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.4rem;
+    padding: 1rem;
+    /* margin-left: 0.4rem;
+    margin-right: 0.4rem; */
+}
+
+main section.left-section h1 ,
+main section.left-section h2{
+    color: var(--title-color);
+}
+main section.left-section h1.title {
+    font-size: 1rem;
+}
+main section.left-section h2 span{
+    color: var(--blue-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+main section.left-section p {
+    color: var(--subtitle-color);
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+main section.left-section div.icons {
+    gap: 0.4rem;
+    margin: 1rem 0;
+    color: var(--blue-color);
+    font-size: 0.8rem;
+}
+
+main .icon-twitter,
+main .icon-instagram ,
+main .icon-linkedin,
+main .icon-github {
+    padding: 4px;
+    border: 1px solid var(--blue-color);
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+main .icon-twitter:hover,
+main .icon-instagram:hover , 
+main .icon-linkedin:hover,
+main .icon-github:hover {
+   opacity: 1;
+   border-color: rgb(29, 244, 244);
+   /* font-size: 1rem; */
+   cursor: pointer;
+}
+
+main section.left-section div.cv button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--blue-color);
+    cursor: pointer;
+}
+main section.left-section div.cv button:hover {
+
+    background-color: rgb(64, 235, 235);
+    color: rgba(0, 0, 0, 0.778);
+}
+
+/*Start  rigth section  */
+main section.rigth-section .avatar {
+    width:200px;
+    border-radius: 50%;
+    border: 1px solid rgb(241, 238, 235);
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+}
+
+
+/* Start Responsive disine */
+
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  main section.rigth-section .avatar {
+    width:100px;
+  }
+}

@@ -1,0 +1,68 @@
+
+section.about-section {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* margin-top: 1rem; */
+}
+
+section.about-section div.left-side .avatar {
+    width: 200px; /* Adjust size as needed */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+    background: #1d1d27; /* Background color similar to the example */
+    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #00f2ff; /* Bright cyan border */
+    padding: 10px; /* Space between border and image */
+    position: relative;
+}
+
+section.about-section div.left-side img.avatar {
+    width: 80%; /* Adjust size to fit within the hexagon */
+    height: auto;
+    object-fit: cover;
+}
+
+section.about-section div.right-side h1.title {
+    color: var(--title-color);
+}
+section.about-section div.right-side h1.title span{
+    color: var(--blue-color);
+}
+section.about-section div.right-side p.subtitle {
+    color: var(--subtitle-color);
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+
+section.about-section div.right-side  button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--blue-color);
+    cursor: pointer;
+    margin-top: 10px;
+}
+section.about-section div.right-side button:hover {
+
+    background-color: rgb(64, 235, 235);
+    color: rgba(0, 0, 0, 0.778);
+}
+
+/* Start Responsive disine */
+
+@media (max-width: 600px) {
+    section.about-section {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    section.about-section div.left-side img.avatar {
+      width:50%;
+      align-self: center;
+    }
+  }

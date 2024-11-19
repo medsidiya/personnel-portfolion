@@ -1,0 +1,155 @@
+section.contact {
+    padding: 1rem;
+}
+section.contact   h1.main-title {
+    color: var(--blue-color);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+section.contact  main.flex {
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* align-items: center; */
+    justify-content: center;
+}
+section.contact  h1:first-child{
+    /* text-align: center; */
+    color: var(--blue-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+
+}
+section.contact  .left-section {
+    flex-direction: column;
+}
+
+section.contact p {
+    color: var(--subtitle-color);
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.left-section .card {
+    border: 1px solid rgba(205, 189, 188, 0.866);
+    padding: 0.4rem;
+    border-radius: 5px;
+    width: 22rem;
+    background-color: #4b4747;
+    margin-bottom: 1.8rem;
+}
+section.contact div.flex {
+    gap: 1rem;
+}
+section.contact .card .icon {
+    border: 1px solid rgb(194, 248, 245);
+    background: hsl(169, 25%, 67%);
+    color: var(--blue-color);
+    padding: 0.4rem ;
+    text-align: center;
+    align-self: center;
+    font-size: 1.6rem;
+    border-radius: 8px;
+}
+section.contact .card span {
+    color: var(--subtitle-color);
+}
+
+section.contact .card h2 {
+    color: var(--title-color);
+    font-weight: bold;
+}
+section.contact label {
+    color: var(--subtitle-color);
+    text-align: start;
+}
+section.contact #email{
+    margin-left: 0;
+}
+section.contact #email,
+section.contact #message {
+  all: unset;
+  background-color: rgba(229, 234, 236, 0.15);
+  border: 1px solid rgb(36, 36, 37);
+  color: white;
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+section.contact #message {
+    min-height: 9rem;
+    resize: vertical;
+    margin-top: 1rem;
+}
+
+  section.contact .submit {
+    background-color: var(--blue-color);
+  
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+  
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 1.8rem;
+    border: 1px solid rgb(63 63 70);
+  }
+  
+  section.contact .submit:hover {
+    scale: 0.97;
+  }
+
+  section.contact form div.flex {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ===============================
+   3- Responsive desin (Media Quiry)
+================================== */
+
+@media (max-width: 400px) {
+    section.contact  main.flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    section.contact  .left-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+
+    section.contact form  div.flex{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: start;
+    }
+    .left-section .card {
+        border: 1px solid rgba(208, 202, 200, 0.866);
+        padding: 0.4rem;
+        border-radius: 5px;
+        width: 16rem;
+        background-color: #4b4747;
+        margin-bottom: 0.8rem;
+    }
+    .left-section .card h2{
+        font-size: 1rem;
+    }
+  section.contact #email,
+section.contact #message {
+    margin: 0 0 1rem 0;
+}
+  section.contact button.submit {
+    align-self: center;
+  }
+}
